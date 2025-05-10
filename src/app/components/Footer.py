@@ -11,6 +11,7 @@ def Footer():
     return html.Footer(
         html.Div(
             "Krueger 2025",
-            style={'textAlign': 'right'}
-        )
+            className="footer-text"
+        ),
+        className="footer"
     )

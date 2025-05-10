@@ -1,0 +1,67 @@
+/* 
+    To change themes, add the theme class to the body element:
+    <body class="theme-holiday"> for holiday theme
+    <body class="theme-summer"> for summer theme
+    <body class="theme-thanksgiving"> for thanksgiving theme
+*/
+
+/* Theme system with custom properties */
+:root {
+  /* Default theme (regular) */
+  --color-main: white;
+  --color-secondary: #333;
+  --color-accent-1: #0277bd; /* blue */
+  --color-accent-2: #d32f2f; /* red */
+  --color-action: #388e3c; /* green */
+  --color-hover: #61dafb; /* light blue */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Holiday theme */
+.theme-holiday {
+  --color-main: #f8f8f8;
+  --color-secondary: #1a472a; /* dark green */
+  --color-accent-1: #c41e3a; /* red */
+  --color-accent-2: #ffd700; /* gold */
+  --color-action: #c41e3a; /* red */
+  --color-hover: #ffd700; /* gold */
+}
+
+/* Summer theme */
+.theme-summer {
+  --color-main: #ffffff;
+  --color-secondary: #0077c2; /* ocean blue */
+  --color-accent-1: #ffb300; /* sun yellow */
+  --color-accent-2: #ff6d00; /* sunset orange */
+  --color-action: #00c853; /* summer green */
+  --color-hover: #ffb300; /* sun yellow */
+}
+
+/* Thanksgiving theme */
+.theme-thanksgiving {
+  --color-main: #fffde7; /* cream white */
+  --color-secondary: #5d4037; /* brown */
+  --color-accent-1: #ff9800; /* orange */
+  --color-accent-2: #795548; /* darker brown */
+  --color-action: #bf360c; /* burnt sienna */
+  --color-hover: #ff9800; /* orange */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+}
+
+/* Utility for adding space at the bottom to accommodate the fixed footer */
+.content-with-footer {
+  padding-bottom: 3.5rem; /* Adjust based on footer height */
+}
+
+/* Container for components that should be positioned on top of the background */
+.app-container {
+  position: relative;
+  z-index: 1;
+}

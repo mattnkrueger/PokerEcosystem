@@ -1,0 +1,54 @@
+/* Home page styling */
+.home-content {
+    transition: all 0.3s ease;
+}
+
+/* Hero section styling */
+.hero-section {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-accent-1);
+    transition: all 0.3s ease;
+}
+
+/* Card section styling */
+.card-section {
+    transition: all 0.3s ease;
+}
+
+.card-content {
+    min-height: 150px;
+}
+
+/* When in fullscreen, enhance the hero section */
+body.fullscreen .hero-section {
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 3rem;
+    border-left-width: 8px;
+    margin-bottom: 2.5rem !important;
+}
+
+/* When in fullscreen, adjust card sections to take advantage of the space */
+body.fullscreen .card-section {
+    margin-top: 2rem;
+}
+
+/* Animations for fullscreen transitions */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s forwards;
+} 
