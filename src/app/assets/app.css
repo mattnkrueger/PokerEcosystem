@@ -10,10 +10,10 @@
   /* Default theme (regular) */
   --color-main: white;
   --color-secondary: #333;
-  --color-accent-1: #0277bd; /* blue */
-  --color-accent-2: #d32f2f; /* red */
-  --color-action: #388e3c; /* green */
-  --color-hover: #61dafb; /* light blue */
+  --color-accent-1: #B92025; /* Red for diamonds */
+  --color-accent-2: #000000; /* black */
+  --color-action: rgba(12, 101, 97, 0.54); /* from second image, 54% opacity */
+  --color-hover: #0E6761; /* from first image, 100% opacity */
   --color-shadow: rgba(0, 0, 0, 0.1);
 }
 
